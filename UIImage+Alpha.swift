@@ -25,7 +25,7 @@ extension UIImage {
 		
 		
 		let pointX = trunc(point.x)
-		let pointY = trunc(point.x)
+		let pointY = trunc(point.y)
 		
 		let cgImage = self.cgImage
 		
