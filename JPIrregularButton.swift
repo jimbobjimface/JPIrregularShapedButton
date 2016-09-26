@@ -24,8 +24,12 @@ class IrregularButton: UIButton {
 			return nil
 		}
 		
+		let x = (point.x / self.bounds.size.width) * displayedImage!.size.width
+		let y = (point.y / self.bounds.size.height) * displayedImage!.size.height
+		let scaledPoint = CGPoint(x: x, y: y)
 		
-		if displayedImage!.isPointTransparent(point: point) {
+		
+		if displayedImage!.isPointTransparent(point: scaledPoint) {
 			return nil
 		}
 		
